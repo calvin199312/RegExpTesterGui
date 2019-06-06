@@ -25,7 +25,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="regex_line_edit_"/>
+       <widget class="QLineEdit" name="regex_line_edit_">
+        <property name="text">
+         <string>ipar\(([^)]+)\)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -39,7 +43,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="check_text_line_edit_"/>
+       <widget class="QLineEdit" name="check_text_line_edit_">
+        <property name="text">
+         <string>ipar(jacky) ipar(donna) ipar(kelso)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
