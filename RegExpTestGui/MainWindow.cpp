@@ -72,7 +72,7 @@ void MainWindow::loadRegExp()
             {
                 message_list << QString("There are %1 full text matches").arg(full_text_count);
             }
-            message_list << "\"" + full_text_matches.join("\"\n\"") + "\"";
+            message_list << "\"" + full_text_matches.join("\"<br>\"") + "\"<br>";
             message_list << "\n";
 
             const int capture_count = captures.count();
@@ -90,7 +90,7 @@ void MainWindow::loadRegExp()
                 {
                     message_list << QString("There are %1 captures").arg(capture_count);
                 }
-                message_list << "\"" + captures.join("\"\n\"") + "\"";
+                message_list << "\"" + captures.join("\"<br>\"") + "\"<br>";
             }
             ui->result_text_browser_->setHtml(message_list.join("<br>"));
         }
